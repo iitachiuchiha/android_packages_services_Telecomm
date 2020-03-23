@@ -606,7 +606,7 @@ public class Ringer {
                 Settings.System.FLASHLIGHT_ON_CALL_WAITING, 0, UserHandle.USER_CURRENT) == 1;
 
         if (mFlashOnCallWait) {
-            torchToggler.stop();
+            mBlinkActive = false;
         }
     }
 
